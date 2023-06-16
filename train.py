@@ -104,7 +104,7 @@ def main(unused_argv):
             if writer:
                 writer.add_summary(summaries, step)
 
-        print "初始化完毕，开始训练"
+        print ("初始化完毕，开始训练")
         for i in range(Config.training.epoches):
             batch_train = train_data.next_batch()
             # 训练模型
